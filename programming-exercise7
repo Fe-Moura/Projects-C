@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int nota1, nota2, nota3;
+    int peso1, peso2, peso3;
+    int exame;
+    double media1, media2;
+
+    printf("Digite a nota 1: ");
+    scanf("%d", &nota1);
+        printf("Digite o peso da nota 1: ");
+        scanf("%d",&peso1);
+    printf("Digite a nota 2: ");
+    scanf("%d", &nota2);
+        printf("Digite o peso da nota 2: ");
+        scanf("%d",&peso2);
+    printf("Digite a nota 3: ");
+    scanf("%d", &nota3);
+        printf("Digite o peso da nota 3: ");
+        scanf("%d",&peso3);
+
+    media1 = ((nota1*peso1)+(nota2*peso2)+(nota3*peso3))/(peso1+peso2+peso3);
+
+    if (media1>=7){
+    printf("Situacao do aluno: Aprovado.");
+    }
+    else{
+    printf("Situacao do aluno: Deve fazer o exame.\n");  
+        
+        printf("Digite a nota do exame: ");
+        scanf("%d", &exame);
+
+        media2 = (media1+exame)/2;
+
+        if (media2>=5){
+            printf("Situacao do aluno apos o exame: Aprovado.");
+        }
+        else{
+            printf("Situacao do aluno apos o exame: Reprovado.");
+        }
+    }
+
+    return 0;
+}
