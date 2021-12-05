@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+int segundos, math;
+printf("Digite o tempo em segundos: ");
+scanf("%d", &segundos);
+math = segundos/60;
+printf("0:%d:0",math);
+}
