@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int converter ,celsius;
+    
+    printf("Digite a temp em C: ");
+    scanf("%d", &celsius);
+
+    converter = (9*celsius+160)/5;
+
+    printf("A temperatura em F eh: %d", converter);
+
+    return 0;
+}
