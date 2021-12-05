@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+  int i;
+  double num,soma;
+
+  for(i=1; i<=4; i++){
+    printf("Entre a nota da prova %d: \n", i);
+    scanf("%lf",&num);
+    soma+=num;
+  }
+  printf("A media eh %.2f",soma/4);
+}
+
