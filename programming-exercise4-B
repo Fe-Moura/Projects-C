@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+   int Num,resto,resto1, Num1,Num2,Num3;
+   scanf("%d",&Num);
+   Num1 = Num/100;
+   Num2 = (Num - (Num1*100))/10;
+   Num3 = Num%10; 
+   printf("%d\n%d\n%d",Num1,Num2,Num3);
+
+}
