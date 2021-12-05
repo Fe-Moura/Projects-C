@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int numero1,numero2,a,b,c,teste,testeA, AA, BB,teste2, numeroPedido,resposta;
+    scanf("%d", &numero1);
+    numero2 = numero1;
+    
+        numero1%10;
+        a = numero1;
+        numero1%10;
+    numero1 = numero1/10;
+        b = numero1;
+        numero1%10;
+    numero1 = numero1/10;
+        c = numero1;
+
+        teste = (numero2-c*100);
+        testeA = teste;
+
+    testeA%10;
+        AA = testeA;
+    numero1%10;
+    testeA = testeA/10;
+        BB = testeA;
+
+        teste2 = (AA%10);
+
+    numeroPedido = (c+(BB*3)+(teste2*5));
+    resposta = numeroPedido%7;
+
+
+    printf("%d""%d",numero2,resposta);
+ 
+
+    return 0;
+}
