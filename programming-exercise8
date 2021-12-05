@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int salario;
+    double ajuste;
+    printf("Insira o seu salario: ");
+    scanf("%d",&salario);
+    
+    if(salario<500){
+        ajuste = salario*0.15+salario;
+        printf("O seu novo salario eh de: %.2lf",ajuste); 
+    }
+    else if(salario>=500 && salario<1000){
+        ajuste = salario*0.10+salario;
+        printf("O seu novo salario eh de: %.2lf", ajuste);
+    }
+    else{
+        ajuste = salario*0.05+salario;
+        printf("O seu novo salario eh de: %.2lf", ajuste);
+    }
+
+    return 0;
+}
